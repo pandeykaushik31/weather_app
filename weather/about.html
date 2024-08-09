@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Weather App</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color:rgb(247, 248, 248); /* Light gray background similar to Bootstrap's light theme */
+    }
+    .navbar {
+      background-color: rgb(155, 203, 219); /* Primary Bootstrap color for navbar background */
+    }
+    .navbar .nav-link {
+      color: #fff; /* White text color for navbar links */
+    }
+    .container {
+      background-color: #fff; /* White background for container */
+      padding: 2rem;
+      border-radius: 0.25rem;
+      box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); /* Light shadow for a subtle 3D effect */
+    }
+    h1, h2 {
+      color: black; /* Primary Bootstrap color for headings */
+    }
+    table {
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand text-black" href="index.html">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mr-auto">
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li> -->
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container mt-4" style="background-color:rgb(155, 203, 219)" >
+    <h1>About the Weather App</h1>
+    <p class="lead" >
+      Welcome to our Weather App! This application provides real-time weather information for various cities around the world. 
+      You can search for any city using the search bar, or select from the dropdown menu for some of the most common locations.
+    </p>
+    <p>
+      Our app uses the Weather API from RapidAPI to fetch the latest weather data, ensuring you have the most up-to-date information at your fingertips.
+    </p>
+    <h2>Current Weather for Common Places</h2>
+    <div class="table-responsive">
+      <table class="table table-striped" id="common-places-table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Place</th>
+            <th scope="col">Temperature</th>
+            <th scope="col">Max Temp</th>
+            <th scope="col">Min Temp</th>
+            <th scope="col">Cloud Percentage</th>
+            <th scope="col">Feels Like</th>
+            <th scope="col">Humidity</th>
+            <th scope="col">Wind Speed</th>
+            <th scope="col">Wind Degrees</th>
+            <th scope="col">Sunrise</th>
+            <th scope="col">Sunset</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr id="maharashtra">
+            <td>Maharashtra</td>
+            <td class="temp"></td>
+            <td class="max_temp"></td>
+            <td class="min_temp"></td>
+            <td class="cloud_pct"></td>
+            <td class="feels_like"></td>
+            <td class="humidity"></td>
+            <td class="wind_speed"></td>
+            <td class="wind_degrees"></td>
+            <td class="sunrise"></td>
+            <td class="sunset"></td>
+          </tr>
+          <tr id="uttar_pradesh">
+            <td>Uttar Pradesh</td>
+            <td class="temp"></td>
+            <td class="max_temp"></td>
+            <td class="min_temp"></td>
+            <td class="cloud_pct"></td>
+            <td class="feels_like"></td>
+            <td class="humidity"></td>
+            <td class="wind_speed"></td>
+            <td class="wind_degrees"></td>
+            <td class="sunrise"></td>
+            <td class="sunset"></td>
+          </tr>
+          <tr id="delhi">
+            <td>Delhi</td>
+            <td class="temp"></td>
+            <td class="max_temp"></td>
+            <td class="min_temp"></td>
+            <td class="cloud_pct"></td>
+            <td class="feels_like"></td>
+            <td class="humidity"></td>
+            <td class="wind_speed"></td>
+            <td class="wind_degrees"></td>
+            <td class="sunrise"></td>
+            <td class="sunset"></td>
+          </tr>
+          <tr id="west_bengal">
+            <td>West Bengal</td>
+            <td class="temp"></td>
+            <td class="max_temp"></td>
+            <td class="min_temp"></td>
+            <td class="cloud_pct"></td>
+            <td class="feels_like"></td>
+            <td class="humidity"></td>
+            <td class="wind_speed"></td>
+            <td class="wind_degrees"></td>
+            <td class="sunrise"></td>
+            <td class="sunset"></td>
+          </tr>
+          <tr id="bihar">
+            <td>Bihar</td>
+            <td class="temp"></td>
+            <td class="max_temp"></td>
+            <td class="min_temp"></td>
+            <td class="cloud_pct"></td>
+            <td class="feels_like"></td>
+            <td class="humidity"></td>
+            <td class="wind_speed"></td>
+            <td class="wind_degrees"></td>
+            <td class="sunrise"></td>
+            <td class="sunset"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
